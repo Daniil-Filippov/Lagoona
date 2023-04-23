@@ -643,7 +643,6 @@ img {
 .section-want {
   width: 1170px;
   height: 256px;
-
   background: #E9E9E9;
   border-radius: 15px;
 }
@@ -652,7 +651,8 @@ img {
   width: 166px;
   height: 40px;
   margin-left: 40px;
-  margin-top: 45px;
+  margin-top: 115px;
+  margin-bottom: 20px;
 
   font-family: 'Muller';
   font-style: normal;
@@ -669,19 +669,19 @@ img {
   width: 1080px;
   height: 106px;
   margin-left: 45px;
-  margin-top: 20px;
+  margin-top: 0px;
 
   background: #FFFFFF;
   border-radius: 15px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .section-want-item {
   width: 133px;
   height: 43px;
   margin-left: 28px;
-  margin-top: 31px;
   background: #FFFFFF;
 }
 
@@ -721,7 +721,7 @@ img {
 }
 
 .section-want-form-country {
-  margin-left: 41px;
+  margin-left: 13px;
   background: #FFFFFF;
 }
 
@@ -757,7 +757,8 @@ img {
 }
 
 .section-want-form-date{
-  margin-left: 41px;
+  width: 88px;
+  margin-left: 13px;
   background: #FFFFFF;
 }
 
@@ -790,4 +791,85 @@ img {
 
   background: none;
   color: #000000;
+}
+
+.section-want-form-period{
+  width: 121px;
+  margin-left: 13px;
+  background: #FFFFFF;
+}
+
+.section-want-item-period {
+  width: 37px;
+  height: 12px;
+  margin-bottom: 0;
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  /* identical to box height */
+
+  background: none;
+  color: #000000;
+}
+
+.section-want-period{
+  width: 121px;
+  height: 16px;
+  margin-top: 15px;
+
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+
+  background: none;
+  color: #000000;
+}
+
+.section-want-form-tourist{
+  width: 121px;
+  margin-left: 13px;
+  background: #FFFFFF;
+}
+
+.section-want-item-tourist{
+  width: 48px;
+  height: 12px;
+  margin-bottom: 0;
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  /* identical to box height */
+
+  background: none;
+  color: #000000;
+}
+
+.section-want-tourist{
+  width: 121px;
+  height: 16px;
+  margin-top: 15px;
+
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+
+  background: none;
+  color: #000000;
+}
+
+.section-want-btn{
+  margin-right: 28px;
+  margin-left: auto;
+  /* margin-top: 32px; */
+  background: none;
 }
