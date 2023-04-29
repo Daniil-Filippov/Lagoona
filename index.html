@@ -111,40 +111,40 @@
           <li class="services-list-item">
             <img src="/img/schampan.jpg" alt="Эксклюзивное обслуживание" class="services-cart-logo">
             <div class="services-cart-description">
-              <a href="" class="services-cart-link">
-                Эксклюзивное обслуживание
-              </a>
-              <img src="/img/Rectangle 2.svg" alt="Подробнее" class="services-cart-link-logo">
+              <div class="services-card-link-frame">
+                <a href="" class="services-cart-link">Эксклюзивное обслуживание</a>
+                <img src="/img/Rectangle 2.svg" alt="Подробнее" class="services-cart-link-logo">
+              </div>
               <p class="services-card-cont">Равным образом постоянный количественный рост<br> и сфера нашей активности</p>
             </div>
           </li>
           <li class="services-list-item">
             <img src="/img/dinning.jpg" alt="Аренда банкетных залов" class="services-cart-logo">
             <div class="services-cart-description">
-              <a href="" class="services-cart-link">
-                Аренда банкетных залов
-              </a>
-              <img src="/img/Rectangle 2.svg" alt="Подробнее" class="services-cart-link-logo">
+              <div class="services-card-link-frame">
+                <a href="" class="services-cart-link">Аренда банкетных залов</a>
+                <img src="/img/Rectangle 2.svg" alt="Подробнее" class="services-cart-link-logo">
+              </div>
               <p class="services-card-cont">Значимость этих проблем настолько очевидна,<br> что дальнейшее развитие различных форм</p>
             </div>
           </li>
           <li class="services-list-item">
             <img src="/img/pool.jpg" alt="Сауны, бассейны, бани, фитнес-залы" class="services-cart-logo">
             <div class="services-cart-description">
-              <a href="" class="services-cart-link">
-                Сауны, бассейны, бани, фитнес-залы
-              </a>
-              <img src="/img/Rectangle 2.svg" alt="Подробнее" class="services-cart-link-logo">
+              <div class="services-card-link-frame">
+                <a href="" class="services-cart-link">Сауны, бассейны, бани, фитнес-залы</a>
+                <img src="/img/Rectangle 2.svg" alt="Подробнее" class="services-cart-link-logo">
+              </div>
               <p class="services-card-cont">Не следует, однако забывать, что начало <br> повседневной работы по формированию позиции</p>
             </div>
           </li>
           <li class="services-list-item">
             <img src="/img/car-park.jpg" alt="Охраняемые автомобильные стоянки" class="services-cart-logo">
             <div class="services-cart-description">
-              <a href="" class="services-cart-link">
-                Охраняемые автомобильные стоянки
-              </a>
-              <img src="/img/Rectangle 2.svg" alt="Подробнее" class="services-cart-link-logo">
+              <div class="services-card-link-frame">
+                <a href="" class="services-cart-link">Охраняемые автомобильные стоянки</a>
+                <img src="/img/Rectangle 2.svg" alt="Подробнее" class="services-cart-link-logo">
+              </div>
               <p class="services-card-cont">Не следует, однако забывать, что начало <br> повседневной работы по формированию позиции</p>
             </div>
           </li>
@@ -345,7 +345,7 @@
         </ul>
       </div>
     </section>
-    <section class="section-booking">
+    <section class="section-booking ">
       <div class="container">
         <h2 class="section-header">Размещение</h2>
         <ul class="booking-list">
@@ -446,8 +446,8 @@
           </li>
           <li class="booking-list-advanced">
             <div class="booking-list-advanced-description">
-              <a href="" class="booking-list-advanced-all">Рассмотреть все варианты</a>
-              <img src="/img/Rectangle 2.svg" alt="Подробнее" class="booking-list-advanced-logo">
+              <a href="" class="booking-list-advanced-all">Посмотреть все варианты</a>
+              <img src="/img/Rectangle_white.svg" alt="Подробнее" class="booking-list-advanced-logo">
             </div>
           </li>
         </ul>
@@ -457,10 +457,16 @@
       <h2 class="section-heading">Хочу тур</h2>
       <ul class="section-want-list">
         <li class="section-want-item">
-          <form name="test" method="post" action="input1.php" class="section-want-form-town">
-            <p class="section-want-item-town">Город вылета</p>
-            <input type = "search" size="40" class="section-want-town">
-          </form>
+          <p class="section-want-item-town">Город вылета</p>
+          <form action="select1.php" method="post" class="section-want-form-town">
+            <select size="5" multiple name="town" class="section-want-town">
+             <option disabled>Выберите город</option>
+             <option value="Москва">Москва</option>
+             <option value="Санкт-Петербург">Санкт-Петербург</option>
+             <option value="Екат">Екат</option>
+             <option value="Самара">Самара</option>
+            </select>
+           </form>
         </li>
         <li class="section-want-item">
           <form name="test" method="post" action="input1.php" class="section-want-form-country">
@@ -493,11 +499,12 @@
     </section>
     <section class="section-contacs">
       <div class="container">
-        <h2 class="section-heading">Контакты</h2>
+        <h2 class="section-header">Контакты</h2>
+        <div class="contact-container">
           <ul class="contacts-list">
             <li class="contacts-list-item">
               <div class="contacts-list-title">Адрес</div>
-              <div class="contact-list-description">Наш адрес: Москва, Марксистская, д.4</div>
+              <address class="contact-list-description">Москва, Марксистская, д.4</address>
             </li>
             <li class="contacts-list-item">
               <div class="contacts-list-title">Телефон</div>
@@ -538,8 +545,9 @@
             </li>
           </ul>
           <div class="contacts-logo">
-            <img src="/New_site/img/schampan.jpg" alt="Reception" class="contacts-logo-img">
+            <img src="/img/reception.jpg" alt="Reception" class="contacts-logo-img">
           </div>
+        </div>
       </div>
     </section>
   </main>

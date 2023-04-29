@@ -1,7 +1,20 @@
+@font-face {
+  font-family: "Muller";
+  font-style: normal;
+  /* font-weight: 400; */
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Muller"),
+       /* Если не получилось, загрузит woff2 */
+       url("/fonts/MullerRegular.woff2") format("woff2"),
+       /* Если браузер не поддерживает woff2, загрузит woff */
+       url("/fonts/MullerRegular.woff") format("woff");
+}
+
 * {
   box-sizing: border-box;
   background-color: #E5E5E5;
 }
+
 a {
   text-decoration: none;
 }
@@ -33,6 +46,7 @@ img {
   width: 1170px;
   height: 54px;
   margin-top: 30px;
+  margin-bottom: 30px;
   align-items: center;
 }
 
@@ -241,6 +255,7 @@ img {
 
 .offer-price {
   margin-top: 15px;
+  margin-bottom: 47;
   font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
@@ -254,11 +269,12 @@ img {
 }
 
 .offer-card-link-description {
+  display: flex;
+  align-items: center;
   background: none;
 }
 
 .offer-cart-link {
-  margin-bottom: 40px;
   font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
@@ -302,6 +318,8 @@ img {
 }
 
 .offer-card-link-description-big {
+  display: flex;
+  align-items: center;
   margin-left: 45px;
   margin-bottom: 40px;
   font-family: 'Muller';
@@ -378,11 +396,21 @@ img {
 .services-cart-description {
   width: 573px;
   height: 165px;
+  padding-top: 26px;
   background: #FFFFFF;
-  outline: 1px solid #FFFFFF;
+  /* outline: 1px solid #FFFFFF; */
   border-radius: 0px 0px 15px 15px;
   /* transform: rotate(-180deg); */
 }
+
+.services-card-link-frame{
+  /* width: 301px; */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
+}
+
 
 .services-cart-link{
   margin-left: 45px;
@@ -398,6 +426,7 @@ img {
 }
 
 .services-cart-link-logo{
+  margin-left: 5px;
   background: none;
 }
 
@@ -480,7 +509,6 @@ img {
   flex: 1 0 25%;
   width: 374px;
   height: 440px;
-  outline: 1px solid red;
   margin-left: 24px;
   margin-top: 24px;
   background-color: #FFFFFF;
@@ -491,7 +519,6 @@ img {
   flex: 1 0 25%;
   width: 374px;
   height: 440px;
-  outline: 1px solid red;
   margin-left: 24px;
   margin-top: 24px;
   border-radius: 15px;
@@ -563,7 +590,7 @@ img {
   /* width: 191px; */
   height: 16px;
   margin-top: 16px;
-  margin-left: 45px;
+  padding-left: 45px;
   font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
@@ -580,7 +607,7 @@ img {
   /* width: 191px; */
   height: 16px;
   margin-top: 16px;
-  margin-left: 45px;
+  padding-left: 45px;
   font-family: 'Muller';
   font-style: normal;
   font-weight: 400;
@@ -635,6 +662,7 @@ img {
 }
 
 .booking-list-advanced-logo {
+  margin-left: 5px;
   background: none;
 }
 
@@ -872,4 +900,43 @@ img {
   margin-left: auto;
   /* margin-top: 32px; */
   background: none;
+}
+
+.contact-container{
+  width: 1170px;
+  height: 618px;
+  display: flex;
+
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+
+.contacts-list {
+  margin-top: 45px;
+  margin-bottom: 45px;
+  margin-left: 45px;
+
+  background: none;
+}
+
+.contact-list-description{
+  font-family: 'Muller';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+
+
+  color: #000000;
+}
+
+.contacts-logo{
+  margin-top: 45px;
+  margin-right: 45px;
+  margin-bottom: 45px;
+  margin-left: auto;
+
+  /* background: url(/img/reception.jpg); */
+  border-radius: 10px;
 }
