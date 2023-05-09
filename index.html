@@ -10,8 +10,8 @@
 </head>
 <body>
   <!-- надо уточнить про графику и про svg -->
-  <header class="header container">
-    <div class="logo-bar">
+  <header class="header">
+    <div class="logo-bar container">
         <a href="/new_site.html" class="logotype">
           <img src="/img/logo.svg" alt="Lagoona">
         </a>
@@ -29,7 +29,7 @@
         </a>
       </div>
     </div>
-     <div class="nav-bar">
+     <div class="nav-bar container">
       <ul class="nav-list">
         <li class="nav-item">
           <a href="" class="nav-link"> О нас </a>
@@ -59,42 +59,40 @@
     </div>
   </header>
   <main>
-    <section class="offer">
-      <div class="container">
-        <h2 class="section-header">Спецпредложения</h2>
-        <div class="offer-blank">
-          <div class="offer-blank-left">
-            <div class="offer-cart">
-              <div class="offer-card-description">
-                <h3 class="offer-cart-header">Мальдивские <br> острова</h3>
-                <p class="offer-price">от 55 000</p>
-                <div class="offer-card-link-description">
-                  <a href="" class="offer-cart-link">Подробнее</a>
-                  <img src="/img/Rectangle 2.svg" alt="Подробнее" class="offer-cart-link-logo">
-                </div>
-              </div>
-            </div>
-            <div class="offer-cart">
-              <div class="offer-card-description">
-                <h3 class="offer-cart-header">Горящий <br> тур на остров Крит</h3>
-                  <p class="offer-price">от 30 000</p>
-                  <div class="offer-card-link-description">
-                    <a href="" class="offer-cart-link">Подробнее</a>
-                    <img src="/img/Rectangle 2.svg" alt="Подробнее" class="offer-cart-link-logo">
-                  </div>
-              </div>
+    <section class="offer container">
+      <h2 class="section-header">Спецпредложения</h2>
+      <div  class="offer-blank">
+        <div class="offer-blank-left">
+          <div class="offer-cart">
+            <div class="offer-card-description">
+              <h3 class="offer-cart-header">Мальдивские <br> острова</h3>
+              <p class="offer-price">от 55 000</p>
+              <div class="offer-card-link-description">
+                <a href="" class="offer-cart-link">Подробнее</a>
+                <img src="/img/Rectangle 2.svg" alt="Подробнее" class="offer-cart-link-logo">
             </div>
           </div>
-          <div class="offer-cart-big">
-              <h3 class="offer-cart-header-big">Номера <br> класса <br> люкс</h3>
-                <p class="offer-price-big">от 5 000</p>
-                <div class="offer-card-link-description-big">
-                  <a href="" class="offer-cart-link">Подробнее</a>
-                  <img src="/img/Rectangle 2.svg" alt="Подробнее" class="offer-cart-link-logo">
-                </div>
+        </div>
+        <div class="offer-cart">
+          <div class="offer-card-description">
+            <h3 class="offer-cart-header">Горящий <br> тур на остров Крит</h3>
+            <p class="offer-price">от 30 000</p>
+            <div class="offer-card-link-description">
+              <a href="" class="offer-cart-link">Подробнее</a>
+              <img src="/img/Rectangle 2.svg" alt="Подробнее" class="offer-cart-link-logo">
+            </div>
           </div>
         </div>
       </div>
+      <div class="offer-cart-big">
+          <h3 class="offer-cart-header-big">Номера <br> класса <br> люкс</h3>
+          <p class="offer-price-big">от 5 000</p>
+          <div class="offer-card-link-description-big">
+            <a href="" class="offer-cart-link">Подробнее</a>
+            <img src="/img/Rectangle 2.svg" alt="Подробнее" class="offer-cart-link-logo">
+          </div>
+      </div>
+    </div>
     </section>
     <section class="section-about">
       <div class="container">
@@ -455,10 +453,41 @@
     </section>
     <section class="section-want">
       <h2 class="section-heading">Хочу тур</h2>
-      <ul class="section-want-list">
+      <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST" class="section-want-list">
+        <div class="section-want-item">
+          <p class="section-want-item-town">Город вылета</p>
+          <select size="5" multiple name="town" class="section-want-town">
+            <option disabled>Выберите город</option>
+            <option value="Москва">Москва</option>
+            <option value="Санкт-Петербург">Санкт-Петербург</option>
+            <option value="Екат">Екат</option>
+            <option value="Самара">Самара</option>
+           </select>
+        </div>
+        <div class="section-want-item">
+          <p class="section-want-item-country">Страна</p>
+          <input type = "text" size="40" class="section-want-country">
+        </div>
+        <div class="section-want-item">
+          <p class="section-want-item-date">Дата прибытия</p>
+          <input type = "date" size="40" class="section-want-date">
+        </div>
+        <div class="section-want-item">
+          <p class="section-want-item-period">Ночей</p>
+          <input type = "number" size="40" class="section-want-period">
+        </div>
+        <div class="section-want-item">
+          <p class="section-want-item-tourist">Человек</p>
+          <input type = "number" size="40" class="section-want-tourist">
+        </div>
+        <button type="submit" class="section-want-btn btn">Найти</button>
+
+
+      </form>
+      <!-- <ul class="section-want-list">
         <li class="section-want-item">
           <p class="section-want-item-town">Город вылета</p>
-          <form action="select1.php" method="post" class="section-want-form-town">
+          <form action="https://postman-echo.com/post" method="post" class="section-want-form-town">
             <select size="5" multiple name="town" class="section-want-town">
              <option disabled>Выберите город</option>
              <option value="Москва">Москва</option>
@@ -466,36 +495,37 @@
              <option value="Екат">Екат</option>
              <option value="Самара">Самара</option>
             </select>
+            <button type="submit" class="btn">Найти</button>
            </form>
         </li>
         <li class="section-want-item">
-          <form name="test" method="post" action="input1.php" class="section-want-form-country">
+          <form name="Country_name" method="post" action="https://postman-echo.com/post" class="section-want-form-country">
             <p class="section-want-item-country">Страна</p>
             <input type = "search" size="40" class="section-want-country">
           </form>
         </li>
         <li class="section-want-item">
-          <form name="test" method="post" action="input1.php" class="section-want-form-date">
+          <form name="arrival_date" method="post" action="https://postman-echo.com/post" class="section-want-form-date">
             <p class="section-want-item-date">Дата прибытия</p>
             <input type = "date" size="40" class="section-want-date">
           </form>
         </li>
         <li class="section-want-item">
-          <form name="test" method="post" action="input1.php" class="section-want-form-period">
+          <form name="nights" method="post" action="https://postman-echo.com/post" class="section-want-form-period">
             <p class="section-want-item-period">Ночей</p>
             <input type = "search" size="40" class="section-want-period">
           </form>
         </li>
         <li class="section-want-item">
-          <form name="test" method="post" action="input1.php" class="section-want-form-tourist">
+          <form name="people" method="POST" action="https://postman-echo.com/post" class="section-want-form-tourist">
             <p class="section-want-item-tourist">Человек</p>
             <input type = "search" size="40" class="section-want-tourist">
           </form>
         </li>
         <li class="section-want-btn">
-          <button class="btn">Найти</button>
+          <button type="submit" class="btn">Найти</button>
         </li>
-        </ul>
+        </ul> -->
     </section>
     <section class="section-contacs">
       <div class="container">
